@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>宾馆注册</title>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" type="text/javascript" rel="stylesheet">
+	<link href="css/bootsnav.css" type="text/css" rel="stylesheet">
+	<link href="css/normalize.css" type="text/css" rel="stylesheet">
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/bootsnav.js" type="text/javascript"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-3.6.0.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="js/utils.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="js/city.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="js/location.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="js/register_hotel.js" type="text/javascript" charset="UTF-8"></script>
+<!--    <link rel="stylesheet" type="text/css" href="css/register.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+	<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+    <!--
+      本界面为宾馆注册界面
+      -->
+	  
+</head>
+<body>
+<div class="logobg_style">
+	<div id="large-header" class="large-header login-page">
+		<canvas id="demo-canvas" width="1590" height="711"></canvas>
+    <form>
+        <h1>宾馆注册</h1>
+        <p>账号:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input id="id" maxlength=15 type="text" onkeyup="this.value=this.value.replace(/[^\w]/g,'')" onpaste="this.value=this.value.replace(/[^\w]/g,'')" autofocus required><label id="id_trip"></label></p>
+        
+        <p>密码:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input id="password" maxlength=15 type="text" onkeyup="this.value=this.value.replace(/[^\w]/g,'')" onpaste="this.value=this.value.replace(/[^\w]/g,'')" required><label id="password_trip"></label></p>
+        
+        <p>宾馆名称:<input id="name" type="text" maxlength=10 onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\u4E00-\u9FA5]/g,''))" required><label id="name_trip"></label></p>
+        
+        <p>联系电话:<input id="phone" type="text" maxlength=11 onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') " required><label id="phone_trip"></label></p>
+                    <p>
+                        省:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <select id="province" onchange="showCity(this)">
+                            <option value="0">=请选择省份=</option>
+                        </select>
+                        <label id="province_trip"></label>
+                    </p>
+                    <p>
+                        市:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <select id="city" onchange="showDistinct(this)">
+                            <option>=请选择城市=</option>
+                        </select>
+                        <label id="city_trip"></label>
+                    </p>
+                    <p>
+                        区/县:&nbsp&nbsp&nbsp&nbsp
+                        <select id="district">
+                            <option>=请选择县区=</option>
+                        </select>
+                        <label id="district_trip"></label>
+                    </p>
+                    <p>
+                        详细地址
+                        <input id="location" type="text" maxlength=30 required>
+                        <label id="location_trip"></label>
+                    </p>
+                    <div class="introduce">
+                        <textarea name="introduce" cols="30" id="introduction" required rows="1" maxlength=40 placeholder="介绍"></textarea>
+                        <label id="introduction_trip"></label>
+                    </div>
+        
+        <p style="text-align: center;">
+            <input type="button" class="btn-success" id="cf" value="确认">
+            <input type="reset" class="btn-warning" value="重置">
+        </p>
+    </form>
+	</div>
+</div>
+<script src="js/TweenLite/TweenLite.min.js"></script>
+<script src="js/TweenLite/EasePack.min.js"></script>
+<script src="js/TweenLite/rAF.js"></script>
+<script src="js/TweenLite/demo-1.js"></script>
+</body>
+</html>

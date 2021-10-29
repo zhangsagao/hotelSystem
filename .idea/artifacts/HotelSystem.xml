@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="HotelSystem">
+    <output-path>$PROJECT_DIR$/</output-path>
+    <root id="archive" name="HotelSystem.war">
+      <element id="artifact" artifact-name="hotel_system:war exploded2" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />
+    </root>
+  </artifact>
+</component>

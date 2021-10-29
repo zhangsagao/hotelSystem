@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="hotel_system:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/hotel_system_war_exploded2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="hotel_system" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/json-20200518.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jsp-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/tomcat-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/servlet-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/websocket-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/tomcat-websocket.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.16.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="hotel_system/web/Web" />
+    </root>
+  </artifact>
+</component>

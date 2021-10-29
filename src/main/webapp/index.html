@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>登录界面</title>
+    <meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="font/css/font-awesome.min.css" rel="stylesheet" type="text/javascript">
+	<link href="css/bootsnav.css" rel="stylesheet" type="text/css">
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/bootsnav.js" type="text/javascript"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
+    <script charset="UTF-8" src="js/jquery-3.6.0.js" type="text/javascript"></script>
+	<script src="js/utils.js" type="text/javascript"></script>
+	<script src="js/login.js" type="text/javascript"></script>
+	<link href="css/login.css" rel="stylesheet" type="text/css" />
+	<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+      <!--
+      本界面为登录界面
+      -->
+
+  </head>
+  <body class="logobg_style">
+	  <div class="large-header login-page" id="large-header">
+		  <canvas height="711" id="demo-canvas" width="1590"></canvas>
+      	<form name="form1">
+     		 <h1>小型宾馆预订系统</h1>
+            <input class="input_1" id="name" maxlength=15  name="username" onkeyup="this.value=this.value.replace(/[^\w]/g,'')"  onpaste="this.value=this.value.replace(/[^\w]/g,'')" placeholder=用户名 size=15><br />
+          	<input class="input_1" id="password" maxlength=15 name="password" onkeyup="this.value=this.value.replace(/[^\w]/g,'')" onpaste="this.value=this.value.replace(/[^\w]/g,'')" placeholder=密码 size=15 type=text><br />
+  	 		<span class="radio_box">
+               <input checked="checked" id="guest" name="gettype" type="radio" value="guest">
+               <label for="guest"></label>
+                客人
+        	</span>
+    		<span class="radio_box">
+               <input id="hotel" name="gettype" type="radio" value="hotel">
+               <label for="hotel"></label>
+                宾馆
+       		</span><br/>
+            <input class="btn-success" id="denglu" type="button" value="登录" />
+            <input class="btn-warning" id="zhuce" type="button" value="注册" />
+     	</form> 
+		</div>
+		<script src="js/TweenLite/TweenLite.min.js"></script>
+		<script src="js/TweenLite/EasePack.min.js"></script>
+		<script src="js/TweenLite/rAF.js"></script>
+		<script src="js/TweenLite/demo-1.js"></script>
+  </body>
+</html>
